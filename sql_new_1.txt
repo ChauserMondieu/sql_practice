@@ -1,0 +1,4 @@
+======= below are schema creation handlers =========
+drop schema if exists sql_practice;
+crate schema if not exists sql_practice;
+use sal_practice;
