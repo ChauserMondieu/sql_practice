@@ -7,5 +7,6 @@ alter user 'reasearcher'@'%' identified with mysql_native_password by '19950623'
 select user, host, authentication_string from mysql.user where user='researcher';
 show grants for reseacher;
 grant all privileges on sql_practice.* to 'researcher';
+grant select, insert, update, delete on sql_practice.* to 'researcher'@'%';
 flush privileges;
 revoke all privileges from 'researcher';
