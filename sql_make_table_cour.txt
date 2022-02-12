@@ -1,0 +1,14 @@
+CREATE TABLE `course` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+	`course_name` VARCHAR(50) NULL DEFAULT '0' COMMENT '课程名称',
+	`t_id` INT(11) NULL DEFAULT '0' COMMENT '教师id',
+	PRIMARY KEY (`id`)
+)
+COMMENT='课程表'
+COLLATE='utf8_general_ci';
+
+INSERT INTO `course` (`id`, `course_name`, `t_id`) VALUES (1, '语文', 2);
+INSERT INTO `course` (`id`, `course_name`, `t_id`) VALUES (2, '数学', 1);
+INSERT INTO `course` (`id`, `course_name`, `t_id`) VALUES (3, '英语', 3);
+INSERT INTO `course` (`id`, `course_name`, `t_id`) VALUES (4, '物理', 4);
+INSERT INTO `course` (`id`, `course_name`, `t_id`) VALUES (5, '生物', 4);

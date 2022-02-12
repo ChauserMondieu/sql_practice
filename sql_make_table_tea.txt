@@ -1,0 +1,15 @@
+CREATE TABLE `teacher` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+	`t_name` VARCHAR(50) NOT NULL COMMENT '教师名称',
+	PRIMARY KEY (`id`)
+)
+COMMENT='教师表'
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=5
+;
+
+INSERT INTO `teacher` (`id`, `t_name`) VALUES (1, '张三');
+INSERT INTO `teacher` (`id`, `t_name`) VALUES (2, '李四');
+INSERT INTO `teacher` (`id`, `t_name`) VALUES (3, '王五');
+INSERT INTO `teacher` (`id`, `t_name`) VALUES (4, '叶平');
