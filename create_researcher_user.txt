@@ -1,0 +1,11 @@
+-- under root user, create researcher user
+-- this line means create user, 
+-- identified by means assgning 'password' as password
+create user 'researcher' identified by 'password';
+alter user 'reasearcher'@'%' identified with mysql_native_password by '19950623';
+
+select user, host, authentication_string from mysql.user where user='researcher';
+show grants for reseacher;
+grant all privileges on sql_practice.* to 'researcher';
+flush privileges;
+revoke all privileges from 'researcher';
